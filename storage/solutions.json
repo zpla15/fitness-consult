@@ -1,0 +1,12 @@
+{
+    "diet": [
+        { "type": "DIET", "name": "Intermittent Fasting", "tags": ["enough_time", "strong_will"] },
+        { "type": "DIET", "name": "LCHF", "tags": ["enough_money"] }
+    ],
+    "fitness": [
+        { "type": "FITNESS", "name": "Crossfit", "tags": ["enough_money", "strong_will"] },
+        { "type": "FITNESS", "name": "Cardio Exercise", "tags": ["strong_will"] },
+        { "type": "FITNESS", "name": "Strength", "tags": ["strong_will", "enough_time"] },
+        { "type": "FITNESS", "name": "Spinning", "tags": ["enough_money"] }
+    ]
+}
