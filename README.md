@@ -6,6 +6,13 @@
 ## 프로젝트 소개
 이 프로젝트는 사용자들에게 체중조절에 도움이 되는 상담 및 문의 솔루션을 제공하고 전문가의 조언을 얻을 수 있습니다.
 
+## 개발환경
+
+- **언어:** PHP 8
+- **프레임워크:** Laravel 9
+- **웹 서버:** Nginx
+- **운영체제:** Ubuntu
+
 ## 설치 및 실행
 git clone https://github.com/your-username/weight-management-counseling.git
 
