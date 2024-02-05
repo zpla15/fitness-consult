@@ -1,12 +1,12 @@
 {
     "DIET": [
-        { "type": "DIET", "name": "Intermittent Fasting", "tags": ["enough_time", "strong_will"] },
-        { "type": "DIET", "name": "LCHF", "tags": ["enough_money"] }
+        { "type": "DIET", "suggest": "Intermittent Fasting", "tags": ["enough_time", "strong_will"] },
+        { "type": "DIET", "suggest": "LCHF", "tags": ["enough_money"] }
     ],
     "FITNESS": [
-        { "type": "FITNESS", "name": "Crossfit", "tags": ["enough_money", "strong_will"] },
-        { "type": "FITNESS", "name": "Cardio Exercise", "tags": ["strong_will"] },
-        { "type": "FITNESS", "name": "Strength", "tags": ["strong_will", "enough_time"] },
-        { "type": "FITNESS", "name": "Spinning", "tags": ["enough_money"] }
+        { "type": "FITNESS", "suggest": "Crossfit", "tags": ["enough_money", "strong_will"] },
+        { "type": "FITNESS", "suggest": "Cardio Exercise", "tags": ["strong_will"] },
+        { "type": "FITNESS", "suggest": "Strength", "tags": ["strong_will", "enough_time"] },
+        { "type": "FITNESS", "suggest": "Spinning", "tags": ["enough_money"] }
     ]
 }

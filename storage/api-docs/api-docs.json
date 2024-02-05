@@ -1,0 +1,63 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Fitness Consult API",
+        "description": "Fitness Consult API Documentation",
+        "contact": {
+            "name": "kim",
+            "email": "zpla9621@gmail.com"
+        },
+        "version": "1.0"
+    },
+    "paths": {
+        "/api/v1/how-to-lose-weight": {
+            "post": {
+                "tags": [
+                    "피트니스 상담문의"
+                ],
+                "summary": "피트니스 상담",
+                "description": "피트니스 상담문의",
+                "operationId": "63e7342c0a997d5f34e08271a6c91a3e",
+                "requestBody": {
+                    "description": "피트니스 상담문의 정보",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "name": {
+                                        "description": "유저 이름",
+                                        "type": "string",
+                                        "example": "차은우"
+                                    },
+                                    "solutionType": {
+                                        "description": "선호 솔루션 타입",
+                                        "type": "string",
+                                        "example": "DIET"
+                                    },
+                                    "lifestyleTags": {
+                                        "description": "라이프 스타일 태그",
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        },
+                                        "example": "['enough_money']"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Fail"
+                    }
+                }
+            }
+        }
+    }
+}
