@@ -11,7 +11,7 @@ class FitnessConsult
     public $type;
     public $tags;
 
-    public function __construct($name, $type, $tags)
+    public function __construct($name, $type=null, $tags)
     {
         $this->type = $type;
         $this->name = $name;

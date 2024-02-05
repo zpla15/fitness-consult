@@ -12,8 +12,12 @@ class ProfessionalSolutionController extends Controller
         $filePath = storage_path('solutions.json');
         $contents = File::get($filePath);
         $solutionsData = json_decode($contents, true);
-        $solutionType = $inquiry->type;
+        //선호하는 타입이 없다면 랜덤으로 타입을 정하고 성향에 맞는 리스트를 추천
+        $randomType = array_rand($solutionsData);
+        $solutionType = $inquiry->type ?? $randomType;
         $lifestyleTags = $inquiry->tags;
+
+        //선호하는 타입의 솔루션 리스트
         $solutionList = $solutionsData[$solutionType];
 
         //태그 일치하는것만 필터링
@@ -32,7 +36,7 @@ class ProfessionalSolutionController extends Controller
                 return count($bTag) - count($aTag);
             }
 
-            //선호 태그가 앞에 있는지 확인
+            //선호 태그가 앞에 있는것을 우선으로 정렬
             $aInTag = in_array($aTag[0], $lifestyleTags);
             $bInTag = in_array($bTag[0], $lifestyleTags);
         
